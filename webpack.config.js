@@ -68,6 +68,16 @@ module.exports = async () => {
             port: 3000,
             open: true,
             hot: true,
+            historyApiFallback: {
+                rewrites: [
+                    { from: /^\/visi\/?$/, to: '/visi/index.html' },
+                    { from: /^\/struktur\/?$/, to: '/struktur/index.html' },
+                    { from: /^\/galeri\/?$/, to: '/galeri/index.html' },
+                    { from: /^\/lokasi\/?$/, to: '/lokasi/index.html' },
+                    { from: /^\/kontak\/?$/, to: '/kontak/index.html' },
+                    { from: /^\/$/, to: '/index.html' },
+                ],
+            },
         },
     };
 };
