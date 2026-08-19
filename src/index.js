@@ -56,21 +56,6 @@ function initNavbar() {
             });
         });
     }
-
-    // Set active nav link
-    const currentPath = window.location.pathname;
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        const href = link.getAttribute('href');
-        if (currentPath.endsWith('/') && href === '../index.html' && currentPath.split('/').filter(Boolean).length > 1) {
-            // sub-page, don't mark beranda active
-        } else if (
-            (currentPath.endsWith('index.html') && href === '../index.html') ||
-            (currentPath === '/' && (href === 'index.html' || href === './')) ||
-            currentPath.includes(href.replace('index.html', '').replace('../', ''))
-        ) {
-            link.classList.add('active');
-        }
-    });
 }
 
 // --- Scroll Animations ---
