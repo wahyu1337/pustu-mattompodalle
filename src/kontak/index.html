@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hubungi Puskesmas Pembantu (Pustu) Kelurahan Mattompodalle melalui WhatsApp atau Email.">
+    <title>Kontak — Pustu Mattompodalle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
+                <span class="brand-icon">P</span>
+                Pustu Mattompodalle
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../visi/index.html">Visi & Misi</a></li>
+                <li><a href="../struktur/index.html">Struktur</a></li>
+                <li><a href="../galeri/index.html">Galeri</a></li>
+                <li><a href="../lokasi/index.html">Lokasi</a></li>
+                <li><a href="../kontak/index.html" class="active">Kontak</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Hubungi Kami</h1>
+        <p>Kami siap melayani pertanyaan dan kebutuhan kesehatan Anda</p>
+        <div class="header-divider"></div>
+    </section>
+
+    <!-- Kontak Content -->
+    <section class="section">
+        <div class="container">
+            <div class="kontak-grid">
+                <!-- Info Kontak -->
+                <div class="kontak-info animate-on-scroll">
+                    <div class="kontak-card">
+                        <div class="kontak-icon wa">📱</div>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>Hubungi kami langsung via WhatsApp</p>
+                            <a href="https://wa.me/6281356336949" target="_blank">+62 813-5633-6949</a>
+                        </div>
+                    </div>
+                    <div class="kontak-card">
+                        <div class="kontak-icon email">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>Kirim pesan melalui email</p>
+                            <a href="mailto:supisupiana328@gmail.com">supisupiana328@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="kontak-card">
+                        <div class="kontak-icon clock">🕐</div>
+                        <div>
+                            <h3>Jam Operasional</h3>
+                            <p>Senin – Sabtu</p>
+                            <p style="font-weight: 600; color: var(--color-gray-700);">08:00 – 14:00 WITA</p>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp CTA -->
+                    <a href="https://wa.me/6281356336949" target="_blank" class="btn btn-wa" style="width: 100%; justify-content: center; font-size: 1rem; padding: 1rem;">
+                        💬 Chat via WhatsApp Sekarang
+                    </a>
+                </div>
+
+                <!-- Form Kontak -->
+                <div class="kontak-form animate-on-scroll">
+                    <h3>📝 Kirim Pesan</h3>
+                    <p style="color: var(--color-gray-500); margin-bottom: var(--space-xl); font-size: 0.9rem;">Isi formulir di bawah ini dan kami akan merespons secepat mungkin.</p>
+                    <form id="contact-form" action="https://wa.me/6281356336949" target="_blank" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subjek">Subjek</label>
+                            <input type="text" id="subjek" name="subjek" placeholder="Perihal pesan Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-teal" style="width: 100%; justify-content: center;">
+                            Kirim via WhatsApp →
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>🏥 Pustu Mattompodalle</h3>
+                    <p>Puskesmas Pembantu Kelurahan Mattompodalle, Kecamatan Polongbangkeng Utara, Kabupaten Takalar, Sulawesi Selatan.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="../visi/index.html">Visi & Misi</a></li>
+                        <li><a href="../struktur/index.html">Struktur</a></li>
+                        <li><a href="../galeri/index.html">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><a href="https://wa.me/6281356336949" target="_blank">📱 +62 813-5633-6949</a></li>
+                        <li><a href="mailto:supisupiana328@gmail.com">✉️ supisupiana328@gmail.com</a></li>
+                        <li><a href="../lokasi/index.html">📍 Lokasi Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pustu Kelurahan Mattompodalle. Dibuat dengan ❤️ oleh Tim KKN 26 Posko 4.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const subjek = document.getElementById('subjek').value;
+            const pesan = document.getElementById('pesan').value;
+            const waMessage = `Halo Pustu Mattompodalle,%0A%0ANama: ${encodeURIComponent(nama)}%0ASubjek: ${encodeURIComponent(subjek)}%0APesan: ${encodeURIComponent(pesan)}`;
+            window.open(`https://wa.me/6281356336949?text=${waMessage}`, '_blank');
+        }
+    </script>
+
+</body>
+
+</html>

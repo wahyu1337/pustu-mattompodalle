@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lokasi Puskesmas Pembantu (Pustu) Kelurahan Mattompodalle - Temukan kami di Kecamatan Polongbangkeng Utara, Kabupaten Takalar.">
-    <title>Lokasi — Pustu Mattompodalle</title>
+    <meta name="description" content="Galeri Foto Puskesmas Pembantu (Pustu) Kelurahan Mattompodalle - Dokumentasi fasilitas dan kegiatan pelayanan kesehatan.">
+    <title>Galeri — Pustu Mattompodalle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -26,8 +26,8 @@
                 <li><a href="../index.html">Beranda</a></li>
                 <li><a href="../visi/index.html">Visi & Misi</a></li>
                 <li><a href="../struktur/index.html">Struktur</a></li>
-                <li><a href="../galeri/index.html">Galeri</a></li>
-                <li><a href="../lokasi/index.html" class="active">Lokasi</a></li>
+                <li><a href="../galeri/index.html" class="active">Galeri</a></li>
+                <li><a href="../lokasi/index.html">Lokasi</a></li>
                 <li><a href="../kontak/index.html">Kontak</a></li>
             </ul>
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
@@ -40,64 +40,54 @@
 
     <!-- Page Header -->
     <section class="page-header">
-        <h1>Lokasi Kami</h1>
-        <p>Temukan Pustu Mattompodalle di peta</p>
+        <h1>Galeri Foto</h1>
+        <p>Dokumentasi fasilitas dan kegiatan Pustu Mattompodalle</p>
         <div class="header-divider"></div>
     </section>
 
-    <!-- Lokasi Content -->
+    <!-- Gallery Content -->
     <section class="section">
         <div class="container">
-            <div class="map-container">
-                <div class="map-embed animate-on-scroll">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.5!2d119.4715!3d-5.3397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMjAnMjMuMSJTIDExOcKwMjgnMTkuNiJF!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Lokasi Pustu Mattompodalle">
-                    </iframe>
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll">
+                    <img src="../assets/pustu/IMG_8435.jpeg" alt="Pustu Mattompodalle - Tampak Depan" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>Gedung Pustu - Tampak Depan</p>
+                    </div>
                 </div>
-                <div class="map-info animate-on-scroll">
-                    <div class="info-item">
-                        <div class="info-icon">📍</div>
-                        <div>
-                            <h3>Alamat</h3>
-                            <p>Kelurahan Mattompodalle, Kecamatan Polongbangkeng Utara, Kabupaten Takalar, Sulawesi Selatan</p>
-                        </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="../assets/pustu/IMG_8436.jpeg" alt="Pustu Mattompodalle - Fasilitas" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>Fasilitas Pustu Mattompodalle</p>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">🏛️</div>
-                        <div>
-                            <h3>Patokan</h3>
-                            <p>Dekat dengan Kantor Lurah Mattompodalle</p>
-                        </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="../assets/pustu/IMG_8438.jpeg" alt="Pustu Mattompodalle - Area Pelayanan" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>Area Pelayanan Kesehatan</p>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">🏥</div>
-                        <div>
-                            <h3>Instansi Induk</h3>
-                            <p>UPT Puskesmas Polongbangkeng Utara</p>
-                        </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="../assets/pustu/IMG_8439.jpeg" alt="Pustu Mattompodalle - Lingkungan" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>Lingkungan Sekitar Pustu</p>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">🕐</div>
-                        <div>
-                            <h3>Jam Operasional</h3>
-                            <p>Senin – Sabtu: 08:00 – 14:00 WITA</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">📱</div>
-                        <div>
-                            <h3>Hubungi Kami</h3>
-                            <p><a href="https://wa.me/6281356336949" target="_blank" style="color: var(--color-primary); font-weight: 500;">+62 813-5633-6949 (WhatsApp)</a></p>
-                        </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="../assets/pustu/IMG_8440.jpeg" alt="Pustu Mattompodalle - Dokumentasi" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p>Dokumentasi Kegiatan</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Tutup">&times;</button>
+        <img id="lightbox-img" src="" alt="Gallery preview">
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
