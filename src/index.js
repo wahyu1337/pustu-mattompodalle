@@ -10,6 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
     initLightbox();
 });
 
+// Preloader
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        preloader.classList.add('hidden');
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 500);
+    }
+});
+
 // --- Navbar ---
 function initNavbar() {
     const navbar = document.querySelector('.navbar');

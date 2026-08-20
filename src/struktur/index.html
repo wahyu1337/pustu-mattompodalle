@@ -8,9 +8,27 @@
     <title>Struktur Organisasi — Pustu Mattompodalle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        .preloader {
+            position: fixed; inset: 0; background: #f8fafc; z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        .preloader.hidden { opacity: 0; visibility: hidden; }
+        .spinner {
+            width: 50px; height: 50px; border: 4px solid #ccfbf1;
+            border-top-color: #0d9488; border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="spinner"></div>
+    </div>
 
     <!-- Mobile Overlay -->
     <div class="mobile-overlay" id="mobile-overlay"></div>
